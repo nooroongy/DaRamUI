@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout'
+import Mainmenu from './components/mainPage/MainMenu'
+import ButtonPage from './Routes/ButtonPage';
+import InputPage from './Routes/InputPage';
+import SelectPage from './Routes/SelectPage';
+import TogglePage from './Routes/SelectPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout
+        fullscreen={true}
+        left={<Mainmenu></Mainmenu>}
+        right={<>right</>}
+        top={<>top</>}
+        bottom={<>bottom</>}
+        center={<Routes>
+          <Route path='/input' element={<InputPage/>}></Route>
+          <Route path='/toggle' element={<TogglePage/>}></Route>
+          <Route path='/select' element={<SelectPage/>}></Route>
+          <Route path='/button' element={<ButtonPage/>}></Route>
+        </Routes>}
+      />
+      
+    </BrowserRouter>
   );
 }
 
