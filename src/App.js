@@ -4,7 +4,7 @@ import Mainmenu from './components/mainPage/MainMenu'
 import ButtonPage from './Routes/ButtonPage';
 import InputPage from './Routes/InputPage';
 import SelectPage from './Routes/SelectPage';
-import TogglePage from './Routes/SelectPage';
+import TogglePage from './Routes/TogglePage';
 
 function App() {
   return (
