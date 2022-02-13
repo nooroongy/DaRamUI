@@ -7,6 +7,7 @@ const MainMenu = () =>{
         'Input',
         'Toggle',
         'Select',
+        'Card',
     ]
 
     return(

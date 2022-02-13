@@ -6,6 +6,7 @@ import InputPage from './Routes/InputPage';
 import SelectPage from './Routes/SelectPage';
 import TogglePage from './Routes/TogglePage';
 import './css/common.css'
+import CardPage from './Routes/CardPages';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/toggle' element={<TogglePage/>}></Route>
           <Route path='/select' element={<SelectPage/>}></Route>
           <Route path='/button' element={<ButtonPage/>}></Route>
+          <Route path='/card' element={<CardPage/>}></Route>
         </Routes>}
       />
       
