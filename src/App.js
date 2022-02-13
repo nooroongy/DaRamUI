@@ -5,6 +5,7 @@ import ButtonPage from './Routes/ButtonPage';
 import InputPage from './Routes/InputPage';
 import SelectPage from './Routes/SelectPage';
 import TogglePage from './Routes/TogglePage';
+import './css/common.css'
 
 function App() {
   return (
