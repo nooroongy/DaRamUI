@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import '../../css/mainmenu.css'
 
 const MainMenu = () =>{
+    const daramui = true;
+
     const menuList = [
         'Button',
         'Input',
@@ -12,7 +14,7 @@ const MainMenu = () =>{
 
     return(
         <div className="mainmenu__wrap">
-            {menuList.map((v,i)=><Link key={i} to={v.toLowerCase()}><div className="mainmenu__menu">{v}</div></Link>)}
+            {menuList.map((v,i)=><Link key={i} to={(daramui ? 'daramui/' : '') + v.toLowerCase()}><div className="mainmenu__menu">{v}</div></Link>)}
         </div>
     )
 }

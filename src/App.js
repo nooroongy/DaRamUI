@@ -9,6 +9,7 @@ import './css/common.css'
 import CardPage from './Routes/CardPages';
 
 function App() {
+  const daramui = true;
   return (
     <BrowserRouter>
       <Layout
@@ -18,11 +19,11 @@ function App() {
         top={<>top</>}
         bottom={<>bottom</>}
         center={<Routes>
-          <Route path='/input' element={<InputPage/>}></Route>
-          <Route path='/toggle' element={<TogglePage/>}></Route>
-          <Route path='/select' element={<SelectPage/>}></Route>
-          <Route path='/button' element={<ButtonPage/>}></Route>
-          <Route path='/card' element={<CardPage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/input'} element={<InputPage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/toggle'} element={<TogglePage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/select'} element={<SelectPage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/button'} element={<ButtonPage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/card'} element={<CardPage/>}></Route>
         </Routes>}
       />
       
