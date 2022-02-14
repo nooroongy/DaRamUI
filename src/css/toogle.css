@@ -8,7 +8,7 @@
     border-radius: 20px;
     cursor: pointer;
     border: 1.2px solid #0000004a;
-    display: grid;
+    display: inline-grid;
     align-items: center;
 }
 
@@ -26,4 +26,8 @@
 
 .toogle__on .toogle__ball{
     transform: translateX(17px);
+}
+
+.toogle__disabled{
+    opacity: 0.25;
 }

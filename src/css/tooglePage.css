@@ -1,0 +1,50 @@
+.tooglePage__props_wrap{
+    display: grid;
+    grid-template-columns: 135px 1fr 9fr;
+    font-weight: 400;
+    font-family: 'Poppins';
+    align-items: center;
+}
+
+.tooglePage_button{
+    width: 120px;
+    font-family: 'poppins';
+    border: none;
+    background: #4d8ec1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 36px;
+}
+
+.tooglePage__api_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tooglePage__api_wrap button{
+    margin-bottom: 10px;
+}
+
+.tooglePage__event_wrap{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 135px 1fr 9fr;
+}
+
+.tooglePage_span{
+    width: 117px;
+    font-family: 'poppins';
+    border: none;
+    background: #b75b6c;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    height: 36px;
+    display: inline-grid;
+    align-items: center;
+}
+
+.tooglePage_span.clicked{
+    background:#53ab76;
+}

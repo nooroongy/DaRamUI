@@ -1,18 +1,14 @@
 import '../css/layout/layout_list.css'
 
-const Layout_list = ({title,contents=[]}) =>{
-    const getContents = (i) =>{
-        return contents.length>=i ? contents[i] : ''
-
-    }
+const Layout_list = ({lists=[]}) =>{
     return(
         <div className="Layout__list_wrap">
-            {title.map((v,i)=>{
+            {lists.map((v,i)=>{
                 return(
-                    <>
-                        <div className='Layout__list_title' key={i}>{v}</div>
-                        <div className='Layout__list_contents' >{getContents(i)}</div>
-                    </>
+                    <div key={i}>
+                        <div className='Layout__list_title'>{v.title}</div>
+                        <div className='Layout__list_contents'>{v.contents}</div>
+                    </div>
                 )
             })}
         </div>
