@@ -1,0 +1,15 @@
+button{
+    width: 120px;
+    font-family: 'poppins';
+    border: none;
+    background: #4d8ec1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 36px;
+}
+
+.button__disabled{
+    opacity: 0.25;
+    cursor:not-allowed;
+}

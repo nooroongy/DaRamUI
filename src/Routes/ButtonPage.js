@@ -1,5 +1,17 @@
+import Button from "../components/ui/Button";
+import '../css/buttonPage.css'
+
 const ButtonPage = ()=>{
-    return (<>Button</>)
+    const btnClick = () => {
+        alert("btnClick")
+    }
+
+    return (
+    <>
+        <Button click={btnClick}>Click Button</Button>
+        <Button disabled>Disabled Button</Button>
+    </>
+    )
 }
 
 export default ButtonPage;

@@ -1,5 +1,16 @@
+import Input from "../components/ui/Input";
+
 const InputPage = ()=>{
-    return (<>input</>)
+    const inputChange = (e) => {
+        console.log("inputChange");
+        console.log(e.target.value);
+    }
+    return (
+    <>
+        <Input placeholder="test" change={inputChange} maxlength={5}></Input>
+
+    </>
+    )
 }
 
 export default InputPage;
