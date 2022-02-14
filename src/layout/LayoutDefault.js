@@ -1,6 +1,6 @@
 import '../css/layout/layout_default.css'
 
-const Layout_default = ({left,right,top,bottom,center}) =>{
+const LayoutDefault = ({left,right,top,bottom,center}) =>{
     return(
         <div className="layout__default_wrap">
             <div className='layout__default_left'>{left}</div>
@@ -12,4 +12,4 @@ const Layout_default = ({left,right,top,bottom,center}) =>{
     )
 }
 
-export default Layout_default
+export default LayoutDefault

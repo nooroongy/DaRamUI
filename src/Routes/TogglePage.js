@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Toogle, { useToggle } from "../components/ui/Toogle";
-import Layout_list from "../layout/LayoutList";
+import LayoutList from "../layout/LayoutList";
 import '../css/tooglePage.css'
 
 
@@ -44,7 +44,7 @@ const TogglePage = () => {
     ]
 
     return (
-        <Layout_list
+        <LayoutList
             lists={lists}
         />
     )

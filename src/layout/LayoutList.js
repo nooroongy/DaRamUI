@@ -1,6 +1,6 @@
 import '../css/layout/layout_list.css'
 
-const Layout_list = ({lists=[]}) =>{
+const LayoutList = ({lists=[]}) =>{
     return(
         <div className="Layout__list_wrap">
             {lists.map((v,i)=>{
@@ -15,4 +15,4 @@ const Layout_list = ({lists=[]}) =>{
     )
 }
 
-export default Layout_list
+export default LayoutList

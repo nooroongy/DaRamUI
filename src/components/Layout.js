@@ -1,11 +1,11 @@
-import Layout_default from "../layout/LayoutDefault";
+import LayoutDefault from "../layout/LayoutDefault";
 import '../css/layout.css'
 
 const Layout = ({type = 'default',left,right,top,bottom,center,fullscreen=false}) =>{
     function getLayout(type){
         switch(type){
             case '' : return (<></>);
-            default: return(<Layout_default
+            default: return(<LayoutDefault
                 left ={left}
                 right ={right}
                 top ={top}
