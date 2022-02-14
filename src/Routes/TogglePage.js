@@ -36,7 +36,8 @@ const TogglePage = () => {
             title: 'event', contents: (<>
                 <div className="tooglePage__event_wrap">
                     <span className={"tooglePage_span " + (!text ? 'clicked' :'')}>{text ? 'before CLick' : 'after CLick'}</span>
-                    {/* <Toogle link={toggle02} onClick={function(){setText(res=>!res)}}></Toogle> */}
+                    <span> click here =></span>
+                    <Toogle link={toggle02} onClick={function(){setText(res=>!res)}}></Toogle>
                 </div>
             </>)
         },
