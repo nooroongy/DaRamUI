@@ -2,39 +2,39 @@ import { useEffect, useState } from 'react';
 import '../../css/toogle.css'
 
 
-export const useToggle = val => {
-    const [value, _setValue] = useState(val);
-    const [_diabled, _setDiabled] = useState(false);
+export const useToggle = initialValue => {
+    const [value, setValue] = useState(initialValue);
+    const [_disabled, _setDiabled] = useState(false);
     const toggle = () => {
-        if (!_diabled)
-            _setValue(res => !res);
+        if (!_disabled)
+            setValue(res => !res);
     }
 
-    const disabled = (val) => {
-    if (val !== undefined) {
-            _setDiabled(val)
+    const disabled = (bool) => {
+        if (bool !== undefined) {
+            _setDiabled(bool)
+        } else {
+            return _disabled;
         }
     }
 
-    const setValue = (val)=>{
-        if (!_diabled)
-            _setValue(val);
+    const clicked = (bool) => {
+        if (!_disabled)
+            setValue(bool);
     }
 
-    return { value, setValue, toggle, _diabled, _setDiabled, disabled }
+    return { value, clicked, toggle, disabled }
 }
 
 const Toogle = ({ onClick, link = [] }) => {
-    const [on, setOn] = [link.value, link.setValue];
-    const [disabled, setDisabled] = [link._diabled, link._setDiabled];
+    const [on, setOn] = [link.value, link.clicked];
 
-    console.log(on, disabled)
     useEffect(() => {
         setOn(link.value)
     }, [link.value])
 
     function onClickToogle() {
-        if (!disabled) {
+        if (!link.disabled()) {
             setOn(res => !res);
             if (typeof onClick === 'function')
                 onClick();
@@ -42,9 +42,9 @@ const Toogle = ({ onClick, link = [] }) => {
     }
     return (
         <span className={
-            'toogle__wrap ' 
+            'toogle__wrap '
             + (on ? 'toogle__on ' : '')
-            + (disabled ? 'toogle__disabled ' : '')
+            + (link.disabled() ? 'toogle__disabled ' : '')
         }
             onClick={onClickToogle}>
             <span className='toogle__ball'></span>

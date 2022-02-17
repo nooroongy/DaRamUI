@@ -4,7 +4,7 @@ import '../../css/mainmenu.css'
 const MainMenu = () =>{
     const daramui = true;
 
-    const menuList = [
+    const uiList = [
         'Button',
         'Input',
         'Toggle',
@@ -12,9 +12,14 @@ const MainMenu = () =>{
         'Card',
     ]
 
+    const layoutList =[
+        'list',
+    ]
+
     return(
         <div className="mainmenu__wrap">
-            {menuList.map((v,i)=><Link key={i} to={(daramui ? 'daramui/' : '') + v.toLowerCase()}><div className="mainmenu__menu">{v}</div></Link>)}
+            {uiList.map((v,i)=><Link key={i} to={(daramui ? 'daramui/' : '') + v.toLowerCase()}><div className="mainmenu__menu_ui">{v}</div></Link>)}
+            {layoutList.map((v,i)=><Link key={i} to={(daramui ? 'daramui/' : '') + v.toLowerCase()}><div className="mainmenu__menu_layout">{v}</div></Link>)}
         </div>
     )
 }

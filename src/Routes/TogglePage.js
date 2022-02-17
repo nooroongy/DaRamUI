@@ -17,7 +17,7 @@ const TogglePage = () => {
         }, {
             title: 'properties', contents: (<>
                 <div className="tooglePage__props_wrap">
-                    <button className="tooglePage_button" onClick={function () { toggle01.setValue(!toggle01.value) }}>change props</button>
+                    <button className="tooglePage_button" onClick={function () { toggle01.clicked(!toggle01.value) }}>change props</button>
                     <span>value:</span>
                     <span>{toggle01.value ? 'true' : 'false'}</span>
                 </div>
@@ -28,8 +28,8 @@ const TogglePage = () => {
                     <button className="tooglePage_button" onClick={function () { toggle01.toggle() }}>.toogle()</button>
                     <button className="tooglePage_button" onClick={function () { toggle01.disabled(true) }}>.disabled(true)</button>
                     <button className="tooglePage_button" onClick={function () { toggle01.disabled(false) }}>.disabled(false)</button>
-                    <button className="tooglePage_button" onClick={function () { toggle01.setValue(true) }}>.setValue(true)</button>
-                    <button className="tooglePage_button" onClick={function () { toggle01.setValue(false) }}>.setValue(false)</button>
+                    <button className="tooglePage_button" onClick={function () { toggle01.clicked(true) }}>.clicked(true)</button>
+                    <button className="tooglePage_button" onClick={function () { toggle01.clicked(false) }}>.clicked(false)</button>
                 </div>
             </>)
         }, {

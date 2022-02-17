@@ -1,18 +1,10 @@
-import Select, { useSelect } from "../components/ui/Select";
 import LayoutList from "../layout/LayoutList";
 
-const SelectPage = ()=>{
-    const select01 = useSelect([
-        {text:'text1',value:'1'},
-        {text:'text2',value:'2'},
-        {text:'text3',value:'3'},
-        {text:'text4',value:'4'},
-    ])
-
+const ListLayoutPage = ()=>{
     const lists = [
         {
             title: 'preview', contents: (<>
-                <Select link={select01}/>
+            preview
             </>)
         }, {
             title: 'properties', contents: (<>
@@ -36,4 +28,4 @@ const SelectPage = ()=>{
     )
 }
 
-export default SelectPage;
+export default ListLayoutPage;

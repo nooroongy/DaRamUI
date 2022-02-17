@@ -5,6 +5,7 @@ import ButtonPage from './Routes/ButtonPage';
 import InputPage from './Routes/InputPage';
 import SelectPage from './Routes/SelectPage';
 import TogglePage from './Routes/TogglePage';
+import ListLayoutPage from './Routes/ListLayoutPage';
 import './css/common.css'
 import CardPage from './Routes/CardPages';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path={(daramui ? 'daramui' : '') + '/select'} element={<SelectPage/>}></Route>
           <Route path={(daramui ? 'daramui' : '') + '/button'} element={<ButtonPage/>}></Route>
           <Route path={(daramui ? 'daramui' : '') + '/card'} element={<CardPage/>}></Route>
+          <Route path={(daramui ? 'daramui' : '') + '/list'} element={<ListLayoutPage/>}></Route>
         </Routes>}
       />
       

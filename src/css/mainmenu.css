@@ -8,17 +8,30 @@
 }
     /* font-family: 'Supermercado One'; */
 
-.mainmenu__menu{
+.mainmenu__menu_ui{
     background-color: black;
     text-align: center;
-    padding: 7px;
-    height: 31px;
+    padding: 3px;
+    height: 28px;
+    font-family: 'Poppins';
+    color: white;
+    font-size: 1.1em;
+    border-bottom: 2px solid white;
+    margin-bottom: 0px;
+    border-radius: 0 17px 4px 0;
+    font-weight: 200;
+}
+
+.mainmenu__menu_layout{
+    background-color: #437485;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
     font-family: 'Poppins';
     color: white;
     font-size: 1.3em;
     border-bottom: 2px solid white;
     margin-bottom: 0px;
     border-radius: 0 17px 4px 0;
-    font-weight: 200;
-    /* font-family: 'Supermercado One'; */
+    font-weight: 400;
 }
