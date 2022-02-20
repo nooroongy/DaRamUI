@@ -42,11 +42,12 @@ const Select = ({ onClick, link = {} }) => {
     }
 
     function closeSelect(){
-        setIsOpend(false);
+        setTimeout(() => {
+            setIsOpend(false);
+        }, 100);
     }
 
     function selectOption(e){
-        console.log(e.target)
         setSelectedText(e.target.innerText)
     }
 
@@ -59,11 +60,11 @@ const Select = ({ onClick, link = {} }) => {
             + (link.disabled() ? 'select__disabled ' : '')}
             onClick={onClickSelect}>
             <span className='select__option_visible' style={{
-                height: (isOpend ? options.length * 27 : 27) + 'px'
+                height: (isOpend ? options.length * 30 : 30) + 'px'
             }}>
 
                 <span className='select__options_wrap' style={{
-                    height: options.length * 27 + 'px'
+                    height: options.length * 30 + 'px'
                 }}>
                     {options.map((option, i) => {
                         return (<span
@@ -75,7 +76,7 @@ const Select = ({ onClick, link = {} }) => {
                 </span>
             </span>
             <input type='checkbox' className='select__ckicker' onClick={openSelect} onBlur={closeSelect} />
-            <span className='select__selectedText'>{selectedText}</span>
+            <span className='select__selectedText'><span className='select__arrow'>arrow_drop_down</span>{selectedText}</span>
         </span>
     )
 }

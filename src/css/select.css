@@ -1,13 +1,38 @@
 .select_wrap{
-    width: 80px;
+    width: 95px;
     display: inline-block;
-    height: 27px;
-    background: green;
+    height: 30px;
     position: relative;
+    text-align: center;
+    background: #4d8ec1;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.select_wrap.select__opend{
+    overflow: visible;
 }
 
 .select__option{
-    color: red;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: grid;
+    align-items: center;
+}
+
+.select__option:last-child{
+    border-radius: 0 0 5px 5px;
+}
+
+.select__option:hover{
+    background: #dfe8f1;
+    box-sizing: border-box;
 }
 
 .select__option_visible{
@@ -16,7 +41,7 @@
     transition: 0.3s;
     display: inline-block;
     position: absolute;
-    top: 0;
+    top: 23px;
     left: 0;
 }
 
@@ -29,15 +54,37 @@
 
 .select__opend .select__options_wrap{
     opacity: 1;
+    border: 2px solid #4d8ec1;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
 }
 
 .select__ckicker{
-    width: 80px;
-    height: 27px;
+    width: 95px;
+    height: 30px;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
     opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.select__selectedText{
+    position: absolute;
+    left: 0;
+    width: 95px;
+    font-size: 0.9em;
+    padding-top: 4px;
+    color: white;
+}
+
+.select__arrow{
+    font-family: 'Material Icons';
+    font-size: 1.9em;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
