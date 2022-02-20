@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/daramui/static/css/main.0cae60d5.css",
-    "main.js": "/daramui/static/js/main.b764abe3.js",
+    "main.css": "/daramui/static/css/main.42fba70d.css",
+    "main.js": "/daramui/static/js/main.d2871b87.js",
     "index.html": "/daramui/index.html",
-    "main.0cae60d5.css.map": "/daramui/static/css/main.0cae60d5.css.map",
-    "main.b764abe3.js.map": "/daramui/static/js/main.b764abe3.js.map"
+    "main.42fba70d.css.map": "/daramui/static/css/main.42fba70d.css.map",
+    "main.d2871b87.js.map": "/daramui/static/js/main.d2871b87.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cae60d5.css",
-    "static/js/main.b764abe3.js"
+    "static/css/main.42fba70d.css",
+    "static/js/main.d2871b87.js"
   ]
 }
